@@ -323,7 +323,7 @@ a {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .home_banner_area {
-  background: url(../img/banner/home.jpg) no-repeat center bottom;
+  background: url(../img/banner/genvotebanner.jpg) no-repeat center bottom;
   position: relative;
   z-index: 1;
   height: 900px; }
@@ -3175,12 +3175,12 @@ h6 {
   width: 90%; }
 .single-footer-widget p {
   margin-bottom: 0px;
-  color: #777777;
+  color: #ffffff;
   max-width: 400px; }
 .single-footer-widget ul li a {
   line-height: 25px;
   display: inline-block;
-  color: #777;
+  color: #ffffff;
   transition: all 0.3s linear;
   margin-bottom: 13px; }
   .single-footer-widget ul li a:hover {
