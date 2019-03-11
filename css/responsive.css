@@ -171,6 +171,9 @@
 	.header_area .navbar .nav.navbar-nav.navbar-right li {
 		margin-left: 0px;
 	}
+	.unordered-list {
+		text-align: center;
+	}
 	/* End Main Menu Area css
 	============================================================================================ */
 	/* Blog page Area css

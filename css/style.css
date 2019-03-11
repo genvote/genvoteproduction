@@ -609,6 +609,41 @@ a {
     background: #ffffff;
     color: #222222; }
 
+.blue_stripe {
+  padding: 50px 0px 50px 0px;
+  background: #403A8E;
+  text-align: center; }
+  .blue_stripe h1 {
+    font-size: 45px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'GlacialIndifferenceBold'; 
+    font-weight: bold;
+    font-style: normal;
+    text-align: left;  
+  }
+  .blue_stripe h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'GlacialIndifferenceBold'; 
+    font-weight: bold;
+    font-style: normal;
+    text-align: left; 
+  }
+  .blue_stripe i{
+    color: #ffffff;
+  }
+  .blue_stripe p {
+    color: #ffffff;
+    max-width: 680px;
+    margin: auto; }
+  .blue_stripe .main_btn2:hover {
+    background: #ffffff;
+    color: #222222; }
+}
+
+
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /* Home Banner Area css
@@ -666,7 +701,7 @@ a {
     overflow: hidden;
     width: 100%;
     min-height: 445px;
-    background: url(../img/banner-bg.jpg) no-repeat center bottom;
+    
     background-size: auto;
     z-index: 1; }
     .banner_area .banner_inner .overlay {
@@ -706,6 +741,16 @@ a {
             display: none; }
         .banner_area .banner_inner .banner_content .page_link a:hover {
           color: #E21F18; }
+
+.model_banner {
+  background: url(../img/genvotegroup.jpg) no-repeat center bottom;}
+
+.story_banner {
+  background: url(../img/storygroup.jpg) no-repeat center bottom;}
+
+.teams_banner {
+  background: url(../img/storygroup.jpg) no-repeat center bottom;}
+
 
 /* End Home Banner Area css
 ============================================================================================ */
@@ -2199,14 +2244,17 @@ h6 {
 .unordered-list li {
   position: relative;
   padding-left: 30px;
-  line-height: 1.82em !important; }
+  line-height: 1.82em !important;
+  text-align:left;}
+
+  
 
 .unordered-list li:before {
   content: "";
   position: absolute;
   width: 14px;
   height: 14px;
-  border: 3px solid #f8b600;
+  border: 3px solid #E21F18;
   background: #fff;
   top: 4px;
   left: 0;
@@ -2966,6 +3014,16 @@ h6 {
   @media (max-width: 576px) {
     .our_major_cause .owl-item {
       margin-bottom: 0; } }
+.our_major_cause h1 {
+  color:#403A8E;
+  font-family: 'GlacialIndifferenceBold'; 
+  font-weight: bold;
+}
+.card-title{
+  color:#403A8E;
+  font-family: 'GlacialIndifferenceBold'; 
+  font-weight: bold;
+}
 .our_major_cause .card {
   border: 0;
   box-shadow: 0 3px 14px 0px rgba(221, 221, 221, 0.85);
@@ -2974,6 +3032,7 @@ h6 {
   @media (max-width: 576px) {
     .our_major_cause .card .card-body {
       padding: 5px; } }
+  
   .our_major_cause .card figure {
     overflow: hidden;
     margin: 0; }
@@ -3092,7 +3151,7 @@ h6 {
   z-index: 1; }
   @media (max-width: 1024px) {
     .about_us .about_img:after {
-      background: #ffffff; } }
+      background: #f9f9ff; } }
 .about_us .about_img img {
   position: relative;
   z-index: 2;
@@ -3106,6 +3165,28 @@ h6 {
 .about_us .bottom_para {
   margin-top: 50px; }
 
+.red_box {
+  content: '';
+  background-color: #E21F18;
+  top: 30px;
+  bottom: -5px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+}
+.red_box h1 {
+  font-family: 'GlacialIndifferenceBold'; 
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 70px;
+
+  }
+
+
+}
 /* About Us css End
 =========================================================================================== */
 /* Start recent Events css
