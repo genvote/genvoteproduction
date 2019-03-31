@@ -20,6 +20,9 @@
     };
     navbarFixed();
 
+    $('.navbar-nav > li > .dropdown-toggle').click(function () {
+        window.location = $(this).attr('href');
+    });
 
     //--------  Carousel --------// 
     if ($('#our-major-cause').length) {

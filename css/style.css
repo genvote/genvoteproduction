@@ -636,8 +636,8 @@ a {
   }
   .blue_stripe p {
     color: #ffffff;
-    max-width: 680px;
-    margin: auto; }
+    margin: auto;
+    text-align: left; }
   .blue_stripe .main_btn2:hover {
     background: #ffffff;
     color: #222222; }
@@ -2237,6 +2237,11 @@ h6 {
 .single-gallery-image:hover {
   opacity: .8; }
 
+.text-black {
+  color: #222;
+  text-align: left;
+
+}
 .list-style {
   width: 14px;
   height: 14px; }
@@ -2265,7 +2270,7 @@ h6 {
 
 .ordered-list li {
   list-style-type: decimal-leading-zero;
-  color: #f8b600;
+  color: #E21F18;
   font-weight: 500;
   line-height: 1.82em !important; }
 
@@ -2852,15 +2857,15 @@ h6 {
   transition: all 0.3s ease 0s;
   line-height: 28px;
   min-height: 28px;
-  font-size: 12px;
+  font-size: 14px;
   padding-left: 45px; }
 
 .form-select .nice-select .list .option.selected {
-  color: #f8b600;
+  color: #E21F18;
   background: transparent; }
 
 .form-select .nice-select .list .option:hover {
-  color: #f8b600;
+  color: #E21F18;
   background: transparent; }
 
 .form-select .current {
@@ -2898,14 +2903,14 @@ h6 {
 
 .main_btn2 {
   display: inline-block;
-  background: #222222;
+  background: #ffffff;
   padding: 0px 30px;
-  color: #fff;
+  color: #E21F18;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 48px;
-  border: 1px solid #222222;
+  border: 1px solid #ffffff;
   border-radius: 0px;
   outline: none !important;
   box-shadow: none !important;
@@ -3152,6 +3157,10 @@ h6 {
   @media (max-width: 1024px) {
     .about_us .about_img:after {
       background: #f9f9ff; } }
+.about_us h1 {
+  font-family: 'GlacialIndifferenceBold'; 
+  font-weight: bold;
+}
 .about_us .about_img img {
   position: relative;
   z-index: 2;
