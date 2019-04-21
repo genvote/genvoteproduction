@@ -57,11 +57,11 @@ body {
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: #777777; }
+  color: #454545; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: 'GlacialIndifferenceBold'; 
+  font-weight: bold;
   color: #222222; }
 
 button:focus {
@@ -717,7 +717,8 @@ a {
       .banner_area .banner_inner .banner_content h2 {
         color: #ffffff;
         font-size: 48px;
-        font-family: "Roboto", sans-serif;
+        font-family: 'GlacialIndifferenceBold'; 
+        font-weight: bold;
         margin-bottom: 12px;
         font-weight: 500;
         margin-top: 120px; }
@@ -2879,7 +2880,7 @@ h6 {
 /*----------------------------------------------------*/
 /* Main Button Area css
 ============================================================================================ */
-.main_btn {
+.main_btn, .jbtn {
   display: inline-block;
   background: #E21F18;
   padding: 0px 30px;
