@@ -580,6 +580,14 @@ a {
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 20px; }
+  .experience_donation h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'GlacialIndifferenceBold'; 
+    font-weight: bold;
+    font-style: normal;
+  }
   .experience_donation p {
     color: #ffffff;
     max-width: 680px;
