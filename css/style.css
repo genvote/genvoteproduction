@@ -761,7 +761,19 @@ a {
   background: url(../img/GenVote@.jpg) no-repeat center bottom;}
 
 .network_banner {
-  background: url(../img/GenVoteNetwork.jpg) no-repeat center bottom;} 
+  background: url(../img/GenVoteBinghamtonGroup.jpg) no-repeat center bottom;} 
+
+.students_banner {
+  background: url(../img/GenVoteAlbanyTabling.jpg) no-repeat center bottom;}
+
+.candidates_banner {
+  background: url(../img/GenVoteStickers.jpg) no-repeat center bottom;}  
+
+.action_banner {
+  background: url(../img/GenVoteStudents.jpg) no-repeat center bottom;}
+
+.national_banner {
+  background: url(../img/GenVoteNetwork.jpg) no-repeat center bottom;}
 
 
 /* End Home Banner Area css
