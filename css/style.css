@@ -2714,7 +2714,7 @@ h6 {
   height: 100%;
   border-radius: 8px;
   cursor: pointer;
-  border: 1px solid #f1f1f1; }
+  border: 1px solid #454545; }
 
 .primary-radio input:checked + label {
   background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
