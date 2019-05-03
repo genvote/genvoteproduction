@@ -106,63 +106,78 @@
 	</section>
 	<!--================End Banner Area =================-->
 
-	
+	<div class="site-section bg-light about_gap">
+	    <div class="container">
+	      	<h1 class="text-center">Join Us</h1>
+			<br><br>
+	        <div class="row">
+	          	<div class="col-lg-3 col-md-3"> </div>
+					<div class="col-lg-6 col-md-6">
+			            <form action="https://formspree.io/info@genvote.org" method="POST"/>
+			              	<div class="row form-group">
+				                <div class="col-md-6 mb-3 mb-md-0">
+				                  <label class="text-black" for="fname">First Name</label>
+				                  <input type="text" name="fname" id="fname" class="form-control">
+				                </div>
+				                <div class="col-md-6">
+				                  <label class="text-black" for="lname">Last Name</label>
+				                  <input type="text" name="lname" id="lname" class="form-control">
+				                </div>
+				            </div>
+				            <div class="row form-group">
+				                <div class="col-md-12">
+				                  <label class="text-black" for="email">Email</label>
+				                  <input type="email" name="email" id="email" class="form-control">
+				                </div>
+				            </div>
+				            <div class="row form-group">
+				                <div class="col-md-12">
+				                  <label class="text-black" for="subject">Phone</label>
+				                  <input type="phone" name="phone" id="phone" class="form-control">
+				                </div>
+				            </div>
+				           <div class="row form-group">
+				                <div class="col-md-12">
+				                  <label class="text-black" for="Gender">Preferred Gender Pronouns</label><br>
+				                  <select  class="form-control" onchange="if (this.selectedIndex == 6) {$('#otherField').removeClass('hidden');} else {$('#otherField').addClass('hidden');}">
+										<option value="She">She/Her/Hers</option>
+					                    <option value="He">He/Him/His</option>
+					                    <option value="They">They/Them/Theirs</option>
+					                    <option value="Other">Other</option>
+				                  </select>
+				                </div>
+					        </div>
+					        <div class="row form-group">
+				                <div class="col-md-12">
+				                  <label class="text-black" for="message">Why are you interested in partnering with Generation Vote?</label>
+				                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Just a brief description about your campaign, why you are running, and how Generation Vote can help you!"></textarea>
+				                </div>
+				            </div>
+				            <div class="row form-group">
+				                <div class="col-md-12">
+				                  <label class="text-black" for="subject">When is the election?</label>
+				                  <input type="hear" name="hear" id="hear" class="form-control" placeholder="Month/Day/Year">
+				                </div>
+				            </div>
+				            <div class="row form-group">
+				                <div class="col-md-12">
+				                  <label class="text-black" for="subject">How did your hear about Generation Vote?</label>
+				                  <input type="hear" name="hear" id="hear" class="form-control">
+				                </div>
+				            </div>
+				            <div class="row form-group">
+				                <div class="col-md-12 text-center">
+				                  <input type="submit" value="Submit" class="main_btn mr-10">
+				                </div>
+				            </div>
+			        	</form>
+		        	</div>
+		        </div>
+	        </div>
+	    </div>
+	</div>
+	<br><br><br>
 
-	<section  class="about_us about_gap text-center">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-lg-3 col-md-3"> </div>
-				<div style="background-color:#E21F18; padding: 20px 90px;" class="col-lg-6 col-md-6">
-					<form action="https://formspree.io/info@genvote.org" method="POST">
-						<div class="row mt-10">
-			                <div class="col-md-6 mb-3 mb-md-0">
-			                	<input type="text" name="first_name" placeholder="First Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'First Name'"
-							 required class="single-input">
-			                </div>
-			                <div class="col-md-6">
-			                	<input type="text" name="last_name" placeholder="Last Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Last Name'"
-							 required class="single-input">
-			                </div>
-			            </div>
-						
-						<div class="mt-10">
-							<input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'"
-							 required class="single-input">
-						</div>
-						<div class="mt-10">
-							<input type="phone" name="PHONE" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'"
-							 required class="single-input">
-						</div>
-						<div class="input-group-icon mt-10">
-							<div class="form-select" id="default-select">
-								<select>
-									<option value="Pronouns">Preferred Gender Pronouns</option>
-									<option value="She">She/Her/Hers</option>
-				                    <option value="He">He/Him/Hiss</option>
-				                    <option value="They">They/Them/Theirs</option>
-				                    <option value="Other">Other</option>
-								</select>
-							</div>
-						</div>
-						<div class="mt-10">
-							<input type="office" name="OFFICE" placeholder="What office are you running for?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Office'"
-							 required class="single-input">
-						</div>
-						<div class="mt-10">
-			                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Why are you interested in partnering with Generation Vote? "></textarea>
-			             </div>
-						<div class="row form-group">
-			                <div class="col-md-12">
-			                  <input type="submit" value="Submit" class="main_btn2 mr-10">
-			                </div>
-			             </div>
-					</form>
-				</div>
-				<div class="col-lg-3 col-md-3"></div>
-					
-			</div>
-		</div>
-		<br><br><br><br>	
 
 	<!--================ Start Footer Area  =================-->
 	<footer class="footer-area section_gap">
