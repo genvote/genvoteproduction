@@ -329,7 +329,7 @@ a {
   height: 900px; }
   @media (max-width: 992px) {
     .home_banner_area {
-      height: 600px; } }
+      height: 400px; } }
   .home_banner_area .overlay {
     background: rgba(24, 24, 24, 0.33);
     position: absolute;
@@ -703,7 +703,7 @@ a {
 .banner_area {
   position: relative;
   z-index: 1;
-  min-height: 445px; }
+  min-height: 350px; }
   .banner_area .banner_inner {
     position: relative;
     overflow: hidden;
