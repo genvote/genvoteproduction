@@ -752,10 +752,10 @@ a {
           color: #E21F18; }
 
 .model_banner {
-  background: url(../img/genvotegroup.jpg) no-repeat center bottom;}
+  background: url(../img/storygroup.jpg) no-repeat center bottom;}
 
 .story_banner {
-  background: url(../img/storygroup.jpg) no-repeat center bottom;}
+  background: url(../img/genvotegroup.jpg) no-repeat center bottom;}
 
 .teams_banner {
   background: url(../img/GenVote@.jpg) no-repeat center bottom;}
@@ -3208,15 +3208,21 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 20px;
+  padding: 80px 40px;
+
 }
+
 .red_box h1 {
   font-family: 'GlacialIndifferenceBold'; 
   font-weight: bold;
   color: #ffffff;
   font-size: 70px;
-
+}
+  @media (max-width: 991px) {
+    .red_box h1 {
+    font-size: 60px;
   }
+}
 
 
 }
