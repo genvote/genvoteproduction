@@ -134,23 +134,23 @@
 			              <div class="row form-group">
 			                <div class="col-md-6 mb-3 mb-md-0">
 			                  <label class="text-black" for="fname">First Name</label>
-			                  <input type="text" name="fname" id="fname" class="form-control">
+			                  <input type="text" name="fname" id="fname" class="form-control" required>
 			                </div>
 			                <div class="col-md-6">
 			                  <label class="text-black" for="lname">Last Name</label>
-			                  <input type="text" name="lname" id="lname" class="form-control">
+			                  <input type="text" name="lname" id="lname" class="form-control" required>
 			                </div>
 			              </div>
 			              <div class="row form-group">
 			                <div class="col-md-12">
 			                  <label class="text-black" for="email">Email</label>
-			                  <input type="email" name="email" id="email" class="form-control">
+			                  <input type="email" name="email" id="email" class="form-control" required>
 			                </div>
 			              </div>
 			              <div class="row form-group">
 			                <div class="col-md-12">
 			                  <label class="text-black" for="subject">Phone</label>
-			                  <input type="phone" name="phone" id="phone" class="form-control">
+			                  <input type="phone" name="phone" id="phone" class="form-control" required>
 			                </div>
 			              </div>
 			              <br>
@@ -207,7 +207,7 @@
 			            	<div class="row form-group">
 				                <div class="col-md-12">
 				                  <label class="text-black" for="Subject">Subject</label><br>
-				                  <select  class="form-control" onchange="if (this.selectedIndex == 6) {$('#otherField').removeClass('hidden');} else {$('#otherField').addClass('hidden');}">
+				                  <select  class="form-control" required onchange="if (this.selectedIndex == 6) {$('#otherField').removeClass('hidden');} else {$('#otherField').addClass('hidden');}">
 											<option value="Start a Team">Start a Team</option>
 						                    <option value="Join a Team">Join a Team</option>
 						                    <option value="Learn More">Learn More</option>
@@ -218,7 +218,7 @@
 				            <div class="row form-group">
 				                <div class="col-md-12">
 				                  <label class="text-black" for="message">Message</label>
-				                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+				                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" required placeholder="Write your notes or questions here..."></textarea>
 				                </div>
 				            </div>
 				            <div class="row form-group">
