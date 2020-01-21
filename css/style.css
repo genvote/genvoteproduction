@@ -778,6 +778,9 @@ a {
 .press_banner {
   background: url(../img/press-banner.jpg) no-repeat center bottom;}
 
+.summit_banner {
+  background: url(../img/GenVoteSummit.jpg) no-repeat center bottom;} 
+
 /* End Home Banner Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
@@ -1865,6 +1868,7 @@ a {
   padding-top: 0px;
   padding-bottom: 0px; }
 
+
 /*==============End Elements Button Area css ================*/
 /* =================================== */
 /*  Elements Page Styles
@@ -2875,6 +2879,9 @@ h6 {
 .mt-10 {
   margin-top: 10px; }
 
+.pt-50 {
+  padding-top: 50px;
+}
 .form-select .nice-select .list .option {
   font-weight: 300;
   -webkit-transition: all 0.3s ease 0s;
