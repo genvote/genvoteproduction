@@ -246,7 +246,8 @@ a {
           border-radius: 0px;
           box-shadow: none;
           margin: 0px;
-          background: #fff; }
+          background: #fff; 
+          line-height: 50%;}
           @media (min-width: 992px) {
             .header_area .navbar .nav .nav-item.submenu ul {
               position: absolute;
