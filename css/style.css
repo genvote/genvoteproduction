@@ -324,7 +324,7 @@ a {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .home_banner_area {
-  background: url(../img/banner/genvote-binghamton-students.jpg) no-repeat center bottom;
+  background: url(../img/banner/genvote-banner.jpg) no-repeat center bottom;
   position: relative;
   z-index: 1;
   height: 900px; }
@@ -407,6 +407,79 @@ a {
     letter-spacing: 3px; }
 
 /*---------------------------------------------------- */
+
+
+
+#action_info .action_info_user {
+  display: none;
+}
+
+#can_embed_form_inner h4 {
+  display: none;
+}
+
+/* Heading colors */
+.can_embed #can_embed_form h1,
+.can_embed #donate_auto_modal h1,
+.can_embed #can_embed_form h2,
+.can_embed #donate_auto_modal h2,
+.can_embed #can_embed_form h3,
+.can_embed #donate_auto_modal h3,
+.can_embed #can_embed_form h4,
+.can_embed #donate_auto_modal h4,
+.can_embed #can_embed_form h5,
+.can_embed #donate_auto_modal h5,
+.can_embed #can_embed_form h6,
+.can_embed #donate_auto_modal h6 {
+  color: #ffffff !important;
+}
+
+#can_embed_form .international_link {
+  color: #ffffff;
+}
+
+#d_sharing label {
+  color: #ffffff;
+}
+
+.can_embed.form #can_embed_form_inner>h2 {
+  font-family: "GlacialIndifferenceBold";
+  font-weight: bold;
+  margin-bottom: 15px !important;
+  padding-bottom: 5px !important;
+}
+
+
+#action_info {
+  display: none;
+}
+
+#can_embed_form #can_thank_you { 
+  background-color: #E21F18 !important;
+}
+
+.can_button, #can_embed_form input[type=submit], #can_embed_form .button, #donate_auto_modal input[type=submit], #donate_auto_modal .button, #donate_make_recurring_modal input[type=submit], #donate_make_recurring_modal .button {
+  font-family: "GlacialIndifferenceBold";
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #E21F18 !important;
+}
+
+.red-bg {
+  background-color: #E21F18 !important;
+}
+.white-bg {
+  background-color: #FFFFFF !important;
+}
+
+@media (max-width: 992px) {
+  #can-form-area-join-our-movement-10 {
+    display: none;
+  }
+}
+
+
+
 /*----------------------------------------------------*/
 /* Donation Box Area css
 ============================================================================================ */
@@ -782,6 +855,8 @@ a {
 .summit_banner {
   background: url(../img/GenVoteSummit.jpg) no-repeat center bottom;} 
 
+.welcome_banner {
+  background: url(../img/genvote-friends.jpg) no-repeat center bottom;} 
 /* End Home Banner Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
