@@ -713,6 +713,13 @@ a {
     font-style: normal;
     text-align: left; 
   }
+  .blue_stripe h2 {
+    color: #ffffff;
+    font-family: 'GlacialIndifferenceBold'; 
+    font-weight: bold;
+    font-style: normal;
+    text-align: left; 
+  }
   .blue_stripe i{
     color: #ffffff;
   }
@@ -3311,6 +3318,9 @@ h6 {
 
 
 }
+
+.red {
+  color: #E21F18 !important; }
 /* About Us css End
 =========================================================================================== */
 /* Start recent Events css
