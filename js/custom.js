@@ -1,5 +1,15 @@
 ; (function ($) {
     "use strict"
+
+    /* Election Protection Modal */
+    $(document).ready(function() {
+        var electionProtectionModalShown = localStorage.getItem('electionProtectionModalShown');
+        if (electionProtectionModalShown != '1') {
+            $("#electionProtectionModal").modal('show');
+            localStorage.setItem('electionProtectionModalShown', '1');
+        }
+    });
+
     var nav_offset_top = $('.header_area').height() + 50;
     /*-------------------------------------------------------------------------------
 	  Navbar 
