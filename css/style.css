@@ -1566,6 +1566,66 @@ a {
     font-size: 13px;
     color: #777; }
 
+
+.blog-entry {
+  padding: 15px 25px;
+    height: 225px;
+  background: #1b0e44;
+  display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    transition: 0.3s; }
+  @media (min-width: 768px) {
+    .blog-entry {
+      
+      margin-bottom: 20px; } }
+  @media (max-width: 767.98px) {
+    .blog-entry {
+      padding: 20px;  
+      height: auto;
+      margin-bottom: 30px; } }
+  .blog-entry .text {
+    position: relative;
+    border-top: 0;
+    border-radius: 2px; }
+    .blog-entry .text .heading {
+      font-size: 20px;
+      margin-bottom: 16px; }
+      .blog-entry .text .heading a {
+        color: #000000; }
+        .blog-entry .text .heading a:hover, .blog-entry .text .heading a:focus, .blog-entry .text .heading a:active {
+          color: #7cc24d; }
+    .blog-entry .text .meta-chat {
+      color: #b3b3b3; }
+    .blog-entry .text .read {
+      color: #000000;
+      font-size: 14px; }
+  .blog-entry .meta-date {
+    display: inline-block;
+    background: #7cc24d; }
+    .blog-entry .meta-date span {
+      display: block;
+      color: #fff; }
+    .blog-entry .meta-date .day {
+      font-weight: 700;
+      font-size: 20px; }
+    .blog-entry .meta-date .mos, .blog-entry .meta-date .yr {
+      font-size: 13px; }
+  .blog-entry .meta > div {
+    display: block;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    font-size: 15px; }
+    .blog-entry .meta > div a {
+      color: #b3b3b3;
+      font-size: 13px; }
+      .blog-entry .meta > div a:hover {
+        color: #cccccc; }
+
+
 /*============ End Blog Single Styles  =============*/
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
