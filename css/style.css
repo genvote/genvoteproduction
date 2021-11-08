@@ -214,7 +214,7 @@ a {
   z-index: 99;
   transition: background 0.4s, all 0.3s linear; }
   .header_area .main_menu {
-    background: #f8f8f8; }
+    background: #F9F5E6; }
   .header_area .navbar {
     padding: 0px;
     border: 0px;
@@ -870,6 +870,10 @@ a {
 
 .listening_tour_banner {
   background: url(../img/votingrightslisteningtour.jpg) no-repeat center bottom;} 
+
+.just_democracy_banner {
+  background: url(../img/GenVoteJustDemocracyForAllBanner.jpg) no-repeat center bottom;} 
+
 /* End Home Banner Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
