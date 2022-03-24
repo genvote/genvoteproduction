@@ -496,6 +496,16 @@ a {
   }
 }
 
+ #crisis{
+    font-size:3em;
+    margin-top: -20px;
+  }
+@media (min-width: 992px) {
+  #crisis{
+    font-size:6em;
+  }
+}
+
 
 
 /*----------------------------------------------------*/
