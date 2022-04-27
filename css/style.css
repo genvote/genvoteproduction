@@ -72,7 +72,7 @@ url("../fonts/CreatoDisplay-ExtraBold.svg#filename") format("svg");
 /*----------------------------------------------------*/
 body {
   line-height: 24px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "CreatoDisplay-Regular", sans-serif;
   font-weight: normal;
   color: #454545; }
@@ -1140,7 +1140,7 @@ background: url(../img/genvote-shirt.jpg) no-repeat center bottom;}
     left: 1px;
     right: 1px;
     bottom: 1px;
-    background: rgba(64, 58, 142, 0.63); 
+    background: rgba(227, 8, 9, 0.63); 
     color: #fff;
     transition: all 0.3s linear;
     display: flex;
@@ -1164,7 +1164,7 @@ background: url(../img/genvote-shirt.jpg) no-repeat center bottom;}
       width: 100%;
       height: 1px; }
   .categories_post:hover .categories_details {
-    background: rgba(64, 58, 142, 1); }
+    background: rgba(227, 8, 9, 1); }
 
 /*============ blog_left_sidebar css ==============*/
 .blog_area {
