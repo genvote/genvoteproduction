@@ -507,6 +507,41 @@ a {
 }
 
 
+.at-inner { 
+  background-color: transparent !important; 
+
+}
+.at-title { 
+  color: #F9F5E6 !important; 
+  padding: 0px !important; 
+  font-family: "CreatoDisplay-ExtraBold" !important; 
+  text-transform: uppercase !important; 
+  font-size: 2rem !important;
+}
+
+
+.at-legend {
+  display: none;
+}
+
+.at-form-submit {
+  padding: 0px !important;
+}
+.at-submit {
+  float: none !important;
+}
+
+.at .btn-at-primary {
+  background-color: #E30809 !important;
+}
+.at .btn-at-primary:hover, .at .hover.btn-at-primary {
+    background-color: #E30809 !important;
+    
+}
+
+.at-text {
+  color:#fff;
+}
 
 /*----------------------------------------------------*/
 /* Donation Box Area css

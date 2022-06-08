@@ -34,7 +34,38 @@
         window.location = $(this).attr('href');
     });
 
-    //--------  Carousel --------// 
+    var maxTries = 10;
+    var tries = 0;
+    let waitForSomeElement = () => {
+        const container = $('input[name="FirstName"]');
+        if (!container.length) {
+            tries += 1;
+            if (tries < (maxTries + 1)) {
+                setTimeout(waitForSomeElement, 50); // give everything some time to render
+            }
+        } else {
+            $('#NVSignupForm1284899-ContactInformation-FirstName').contents().filter(function() {
+                return this.nodeType === 3; 
+            }).remove();
+            $('#NVSignupForm1284899-ContactInformation-LastName').contents().filter(function() {
+                return this.nodeType === 3; 
+            }).remove();
+            $('#NVSignupForm1284899-ContactInformation-EmailAddress').contents().filter(function() {
+                return this.nodeType === 3; 
+            }).remove();
+            $('#NVSignupForm1284899-ContactInformation-PostalCode').contents().filter(function() {
+                return this.nodeType === 3; 
+            }).remove();
+
+            $('input[name="FirstName"]').attr("placeholder", "First Name");
+            $('input[name="LastName"]').attr("placeholder", "Last Name");
+            $('input[name="PostalCode"]').attr("placeholder", "Postal Code");
+            $('input[name="EmailAddress"]').attr("placeholder", "Email");
+        }
+    };
+    waitForSomeElement();
+
+        //--------  Carousel --------// 
     if ($('#our-major-cause').length) {
         $('#our-major-cause').owlCarousel({
             loop: true,
