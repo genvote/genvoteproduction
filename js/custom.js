@@ -65,59 +65,6 @@
     };
     waitForSomeElement();
 
-        //--------  Carousel --------// 
-    if ($('#our-major-cause').length) {
-        $('#our-major-cause').owlCarousel({
-            loop: true,
-            margin: 30,
-            items: 3,
-            nav: false,
-            dots: true,
-            responsiveClass: true,
-            // autoplay: 2500,
-            slideSpeed: 300,
-            paginationSpeed: 500,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                768: {
-                    items: 2,
-                },
-                1224: {
-                    items: 3
-                }
-            }
-        })
-    }
-
-    if ($('.clients_slider').length) {
-        $('.clients_slider').owlCarousel({
-            loop: true,
-            margin: 30,
-            items: 5,
-            nav: false,
-            dots: false,
-            responsiveClass: true,
-            autoplay: 2500,
-            slideSpeed: 300,
-            paginationSpeed: 500,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                768: {
-                    items: 3,
-                },
-                1024: {
-                    items: 4,
-                },
-                1224: {
-                    items: 5
-                }
-            }
-        })
-    }
 
     //------- Mailchimp js --------//  
 
@@ -133,89 +80,88 @@
       function active_course() {
     if ($(".active_course").length) {
       $(".active_course").owlCarousel({
-        loop: true,
-        margin: 20,
-        items: 3,
+        items:1,
+        loop:true,
+        margin: 100,
+        autoplay:false,
+        autoplayTimeout:3000,
         nav: true,
-        autoplay: 2500,
-        smartSpeed: 1500,
         dots: false,
-        responsiveClass: true,
-        thumbs: true,
-        thumbsPrerendered: true,
-        navText: ["<img src='https://colorlib.com/preview/theme/edustage/img/prev.png'>", "<img src='https://colorlib.com/preview/theme/edustage/img/next.png'>"],
+        navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
         responsive: {
-          0: {
-            items: 1,
-            margin: 0
-          },
-          991: {
-            items: 2,
-            margin: 30
-          },
-          1200: {
-            items: 3,
-            margin: 30
-          }
+            0: {
+                items: 1
+            },
+            480: {
+                items: 1,
+            },
+            768: {
+                items: 1,
+            }
         }
-      });
+    });
     }
   }
   active_course();
 
+
+ 
     /*-------------------
         Hero Slider
     -------------------*/
-    $('.hero-slider').slick({
-        dots: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 1,
-        centerMode: true,
-        variableWidth: true,
-        centerMode: true,
-        arrows: false,
-        asNavFor: '.hero-text-slider',
-        autoplay: true,
-        pauseOnHover:false,
-        autoplaySpeed: 3000,
-        responsive: [
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
-    
     var hero_slider = $('.hero-slider');
+    if (hero_slider.length) {
+        hero_slider.slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 1,
+            centerMode: true,
+            variableWidth: true,
+            centerMode: true,
+            arrows: false,
+            asNavFor: '.hero-text-slider',
+            autoplay: true,
+            pauseOnHover:false,
+            autoplaySpeed: 3000,
+            responsive: [
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        
 
-    hero_slider.on('wheel', (function(e) {
-        e.preventDefault();
-        if (e.originalEvent.deltaY < 0) {
-            $(this).slick('slickPrev');
-        } else {
-            $(this).slick('slickNext');
-        }
-    }));
+        hero_slider.on('wheel', (function(e) {
+            e.preventDefault();
+            if (e.originalEvent.deltaY < 0) {
+                $(this).slick('slickPrev');
+            } else {
+                $(this).slick('slickNext');
+            }
+        }));
 
-    hero_slider.on('click', '.slick-slide', function (e) {
-        e.preventDefault();
-        var index = $(this).data("slick-index");
-        if ($('.slick-slider').slick('slickCurrentSlide') !== index) {
-            $('.slick-slider').slick('slickGoTo', index);
-        }
-    });
+        hero_slider.on('click', '.slick-slide', function (e) {
+            e.preventDefault();
+            var index = $(this).data("slick-index");
+            if ($('.slick-slider').slick('slickCurrentSlide') !== index) {
+                $('.slick-slider').slick('slickGoTo', index);
+            }
+        });
 
-    $('.hero-text-slider').slick({
-        dots: false,
-        infinite: false,
-        speed: 300,
-        arrows: false,
-        asNavFor: '.hero-slider',
-    });
+        $('.hero-text-slider').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            arrows: false,
+            asNavFor: '.hero-slider',
+        });
+    }
+    
     
     /*  Google map js
     /*----------------------------------------------------*/
