@@ -3875,6 +3875,16 @@ h6 {
 
 /* Start styling for movement-training-resources
 =========================================================================================== */
+.training_btn {
+  margin: 10px 30px;
+  text-align: left;
+  justify-content: start;
+}
+
+.training-header {
+  margin-top: 1rem;
+}
+
 details {
   display: flex;
   border-radius: 5px;
