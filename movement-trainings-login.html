@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/GenVoteFavicon.png" type="image/png">
-	<title>Movement Trainings</title>
+	<title>Movement Trainings Login</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
@@ -31,6 +31,37 @@
 
 	  gtag('config', 'UA-140295173-1');
 	</script>
+
+	<style>
+		
+		.password-form {
+			max-width: 300px;
+			margin: 50px auto;
+		}
+
+		.password-input {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+
+		.submit-button {
+			width: 100%;
+			padding: 10px;
+			background-color: #E30809;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		#login-page {
+			width: 100%;
+			padding: 10px;
+			max-width: 300px;
+			margin: 50px auto;
+		}
+	</style>
 
 </head>
 
@@ -121,7 +152,7 @@
 	</header>
 	<!--================Header Menu Area =================-->
 
-	<!--================ Banner Area =================-->
+	<!--================ Banner Area =====================-->
 	<section class="banner_area training_banner">
 		<div class="banner_inner d-flex align-items-center">
 			<div class="overlay"></div>
@@ -132,97 +163,28 @@
 			</div>
 		</div>
 	</section>
-	<!--================End Banner Area =================-->
+	<!--================End Banner Area ===================-->
 
-
+    <!--================ Training Login Area =================-->
 	<div class="whole-wrap" style="background-color: #F9F5E6">
-			<div class="container">
-				<div class="section-top-border">
-					<div class="row">
-						<div class="col-md-5">
-							<img src="img/GenVote Presentation Yellow.jpg" alt="" class="img-fluid">
-						</div>
-
-						<div class="col-md-7">	
-							
-							<p>In the past year, the GenVote National Team expanded our immersive training program and coaching capacity so anyone can get involved in Generation Vote. Through our movement trainings, GenVoters will receive the tools to talk to anyone and everyone about our generation's democratic crisis and develop campaigns for a just democracy for all at the local, state and national level.</p>
-
-							<p>In 2023, we are announcing a new series of 15 GenVote movement trainings to recruit, retain and develop leaders in the GenVote Base. Generation Vote is the only youth-led electoral justice organization in the youth voting ecosystem that provides such a robust mass training infrastructure for our base.</p>
- 							<a class="main_btn" href="https://secure.everyaction.com/oi_mYM_0xEOdZJYFUMRxdw2">sign up for training</a>
-							<span style="margin-right: 30px;"></span>
-							<a class="main_btn" href="movement-trainings-login.html">view trainings</a>
-
-						</div>
-						
-						
-						
-					</div>	
-						
+		<div class="container">
+			<div class="section-top-border">
+				<div class="row">
+					<div class="password-form">
+						<form onsubmit="return checkPassword()">
+							<input type="password" id="password" class="password-input" placeholder="Enter Password" required>
+							<button type="submit" class="main_btn" id="login-page">Login</button>
+						</form>
+					</div>
+					
+				</div>
+				<div class="row" style="margin-top: -100px;">
+						<a class="main_btn" href="https://secure.everyaction.com/oi_mYM_0xEOdZJYFUMRxdw2" id="login-page" target='_blank' rel='nofollow noreferrer'>Sign Up</a>					
 				</div>
 			</div>
 		</div>
 	</div>
-
-
-	<div class="whole-wrap">
-		<div class="container">
-			<div class="section-top-border">
-				<div class="row">
-					<div class="col-md-3 text-center">
-						<h3 style= "color:#E81CFF">MOVEMENT WELCOME</h3>
-								<br>
-								<p>Welcome to the Movement Calls</p>
-								<p>Building Your Nest: Team / Hub StarterPack</p>
-					</div>
-					<div class="col-md-3 text-center">
-						<h3 style= "color:#F1B80F">MOVEMENT<br> CULTURE</h3>
-						<br>
-						<p>Collectively Caring For Ourselves (and Democracy) </p>
-						<p>Art, Activism, and Democracy</p>
-						<p>Multiracial Democracy and Language Access</p>
-						<p>Living and Breathing the Movement: An Analysis of the GenVote Movement DNA</p>
-						<p>Developing Movement Leaders: How to Train the Trainer</p>
-					</div>	
-					<div class="col-md-3 text-center">
-						<h3 style= "color:#E81CFF">ORGANIZER SKILL DEVELOPMENT</h3>
-						<br>
-						<p>Event Planning 101</p>
-						<p>Effective Volunteer Management</p>
-						<p>Birddogging 101 / How to Birddog Insurrectionists</p>
-						<p>Youth GOTV 101</p>
-						<p>GenVote Defenders: Election Protection Training</p>
-						<p>Community Based Opinions Research</p>
-						<p>How to Build Public Testimony</p>
-					</div>	
-					<div class="col-md-3 text-center">
-						<h3 style= "color:#F1B80F">CORE TEAM / HUB FUNCTIONS</h3>
-						<br>
-						<p>Developing Your JDA Platform</p>
-						<p>A Brief History of Voting Rights & The Struggle for a Just Democracy for All</p>
-						<p>lntersectional Financial Development</p>
-						<p>Organizing Your Constituency</p>
-						<p>Communications Strategy 101</p>
-						<p>Good Trouble: Direct Action 101</p>
-					</div>	
-						
-
-
-						
-
-						
-
-						
-						
-						
-						
-						
-					
-				<br><br><br>
-			</div>
-		</div>
-	</div>
-
-
+	<!--================ End Training Login Area ==============-->
 
 	<!--================ Start Footer Area  =================-->
 	<footer class="footer-area section_gap">
@@ -294,25 +256,6 @@
 	</footer>
 
 	<!--================ End Footer Area  =================-->
-
-
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<!-- <script src="vendors/lightbox/simpleLightbox.min.js"></script> -->
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<!-- <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script> -->
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<!-- <script src="vendors/counter-up/jquery.waypoints.min.js"></script> -->
-	<!-- <script src="vendors/flipclock/timer.js"></script> -->
-	<!-- <script src="vendors/counter-up/jquery.counterup.js"></script> -->
-	<script src="js/mail-script.js"></script>
-	<script src="js/custom.js"></script>
+	<script src="js/obfuscated.js"></script>
 </body>
-
 </html>
