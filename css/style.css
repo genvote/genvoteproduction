@@ -3708,6 +3708,21 @@ h6 {
   background-color: #F1B80F;
   color: #F9F5E6;
 }
+
+/* Default styles for larger screens */
+.yellow-section iframe {
+  width: 560px;
+  height: 315px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .yellow-section iframe {
+    width: 100%; /* Make the video responsive to the container */
+    height: auto; /* Maintain the aspect ratio */
+  }
+}
+
 .yellow-section {
 /* Clients Says Area css
 ============================================================================================ */
