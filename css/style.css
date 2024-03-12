@@ -3896,6 +3896,12 @@ h6 {
   justify-content: start;
 }
 
+.movement_training_btn {
+  margin: 10px 20px 10px 0px;
+  text-align: left;
+  justify-content: start;
+}
+
 .training-header {
   margin-top: 1rem;
 }
