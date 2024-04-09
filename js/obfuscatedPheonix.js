@@ -2,7 +2,7 @@ function _0x35dc(_0x1e5f7d,_0x5ca620){const _0x571be8=_0x571b();return _0x35dc=f
 function checkPassword() {
 	const enteredPassword = document.getElementById('password').value;
 		
-	// Password is in base64 and converted to ASCII, currently "pheonix24"
+	// Password is in base64 and converted to ASCII, currently "EJSummit24!"
 	const correctPassword = atob("cGhlb25peDI0");
 				
 	if (enteredPassword === correctPassword) {
