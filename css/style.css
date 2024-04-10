@@ -378,7 +378,7 @@ a {
         margin: auto;
         max-width: 470px; }
         .home_banner_area .banner_inner .banner_content h1 {
-        font-family: 'GlacialIndifferenceBold'; 
+          font-family: "CreatoDisplay-ExtraBold";
         font-weight: bold;
         color: #ffffff;
         padding: 30px 0px 40px;
@@ -461,7 +461,7 @@ a {
 }
 
 .can_embed.form #can_embed_form_inner>h2 {
-  font-family: "GlacialIndifferenceBold";
+  font-family: "CreatoDisplay-ExtraBold";
   font-weight: bold;
   margin-bottom: 15px !important;
   padding-bottom: 5px !important;
@@ -477,7 +477,7 @@ a {
 }
 
 .can_button, #can_embed_form input[type=submit], #can_embed_form .button, #donate_auto_modal input[type=submit], #donate_auto_modal .button, #donate_make_recurring_modal input[type=submit], #donate_make_recurring_modal .button {
-  font-family: "GlacialIndifferenceBold";
+  font-family: "CreatoDisplay-ExtraBold";
   font-weight: bold;
   font-size: 16px;
   background-color: #E30809 !important;
@@ -584,7 +584,7 @@ a {
 .make_donation {
   background: #f9f9ff; }
   .make_donation h1 {
-    font-family: "GlacialIndifferenceBold";
+    font-family: "CreatoDisplay-ExtraBold";
     font-weight: bold;
     color: #403A8E;
   }
@@ -714,7 +714,7 @@ a {
   background: #E30809;
   text-align: center; }
   .experience_donation h1 {
-    font-family: 'GlacialIndifferenceBold'; 
+    font-family: "CreatoDisplay-ExtraBold"; 
     font-weight: bold;
     color: #ffffff;
     margin-bottom: 20px; }
@@ -722,7 +722,7 @@ a {
     font-size: 20px;
     color: #ffffff;
     margin-bottom: 20px;
-    font-family: 'GlacialIndifferenceBold'; 
+    font-family: "CreatoDisplay-ExtraBold"; 
     font-weight: bold;
     font-style: normal;
   }
@@ -767,7 +767,7 @@ a {
     font-size: 45px;
     color: #ffffff;
     margin-bottom: 20px;
-    font-family: 'GlacialIndifferenceBold'; 
+    font-family: "CreatoDisplay-ExtraBold";
     font-weight: bold;
     font-style: normal;
     text-align: left;  
@@ -776,14 +776,14 @@ a {
     font-size: 20px;
     color: #ffffff;
     margin-bottom: 20px;
-    font-family: 'GlacialIndifferenceBold'; 
+    font-family: "CreatoDisplay-ExtraBold";
     font-weight: bold;
     font-style: normal;
     text-align: left; 
   }
   .blue_stripe h2 {
     color: #ffffff;
-    font-family: 'GlacialIndifferenceBold'; 
+    font-family: "CreatoDisplay-ExtraBold";
     font-weight: bold;
     font-style: normal;
     text-align: left; 
@@ -874,7 +874,7 @@ a {
       .banner_area .banner_inner .banner_content h2 {
         color: #ffffff;
         font-size: 48px;
-        font-family: 'GlacialIndifferenceBold'; 
+        font-family: "CreatoDisplay-ExtraBold";
         font-weight: bold;
         margin-bottom: 12px;
         font-weight: 500;
@@ -3621,12 +3621,12 @@ h6 {
       margin-bottom: 0; } }
 .our_major_cause h1 {
   color:#403A8E;
-  font-family: 'GlacialIndifferenceBold'; 
+  font-family: "CreatoDisplay-ExtraBold";
   font-weight: bold;
 }
 .card-title{
   color:#403A8E;
-  font-family: 'GlacialIndifferenceBold'; 
+  font-family: "CreatoDisplay-ExtraBold";
   font-weight: bold;
 }
 .our_major_cause .card {
@@ -3779,7 +3779,7 @@ h6 {
     .about_us .about_img:after {
       background: #f9f9ff; } }
 .about_us h1 {
-  font-family: 'GlacialIndifferenceBold'; 
+  font-family: "CreatoDisplay-ExtraBold"; 
   font-weight: bold;
 }
 .about_us .about_img img {
@@ -3810,7 +3810,7 @@ h6 {
 }
 
 .red_box h1 {
-  font-family: 'GlacialIndifferenceBold'; 
+  font-family: "CreatoDisplay-ExtraBold";
   font-weight: bold;
   color: #ffffff;
   font-size: 70px;
