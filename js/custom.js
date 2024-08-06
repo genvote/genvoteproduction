@@ -179,4 +179,27 @@
         });
     }
 
+
+     // Image Gallery Code
+ document.addEventListener('DOMContentLoaded', function() {
+  console.log("DOM fully loaded and parsed");
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const close = document.getElementsByClassName('close')[0];
+
+  // Get all images with class 'grid-item'
+  const images = document.querySelectorAll('.grid-item');
+  console.log("Number of images found:", images.length);
+
+  // Add click event to each image
+  images.forEach(img => {
+  img.addEventListener('click', (event) => {
+    event.preventDefault();
+    console.log("Image clicked:", img.src);
+    lightbox.style.display = 'block';
+    lightboxImg.src = img.src;
+  });
+});
+});
+
 })(jQuery)

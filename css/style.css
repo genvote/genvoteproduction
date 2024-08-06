@@ -4395,60 +4395,8 @@ details p {
 }
 
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
-    padding: 16px;
-}
 
-.gallery img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
 
-.gallery img:hover {
-    transform: scale(1.05);
-}
-
-.fullimg {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    text-align: center;
-}
-
-.fullimg:target {
-    display: block;
-}
-
-.fullimg img {
-    max-width: 90%;
-    max-height: 90%;
-    margin-top: 2%;
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.close:before {
-    content: "×";
-}
 
                                 
 /*---------------------------------------------------- */
