@@ -4258,6 +4258,10 @@ details p {
     color: #000;
 }
 
+.modal-dialog.modal-custom { 
+  max-width: 85%; 
+}
+
 
 /* End styling for movement-training-resources
 =========================================================================================== */
