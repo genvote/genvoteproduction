@@ -184,13 +184,20 @@
 
 					<div class="col-md-7 text-left">	
 						<ul id="articleList" class="no-bullets"> 
-							<li class=article-item data-title="Building Your Nest: Team / Hub StarterPack" data-category="Welcome to the Movement" data-body="somebody">Building Your Nest: Team / Hub StarterPack</li> 
-							<li class=article-item data-title="Living and Breathing the Movement: An Analysis of the GenVote Movement DNA" data-category="Welcome to the Movement" data-body="somebody">Living and Breathing the Movement: An Analysis of the GenVote Movement DNA</li> 
+							<li class=article-item data-title="The Role of Students in the Face of Authoritarianism (90-120 minutes)" data-category="Direct Action" 
+							data-body="The GenVote Developing A JDA Campaign training is meant to guide participants in developing a local Just Democracy for All campaign. You’ll learn how to research local voting rights issues, identify targets, set goals, create timelines, and plan tactics — all with practical tools and resources to strengthen youth-led electoral issue campaigns."
+							data-video-link="somelink.com"
+							data-slide-link="https://www.canva.com/design/DAHA4KWK_pg/jRnkp81q5FWhwAgI9kpHZg/edit?utm_content=DAHA4KWK_pg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+							data-resources-link="some resource"
+							>The Role of Students in the Face of Authoritarianism (90-120 minutes)
+						</li> 
+
+							<!-- <li class=article-item data-title="Living and Breathing the Movement: An Analysis of the GenVote Movement DNA" data-category="Welcome to the Movement" data-body="somebody">Living and Breathing the Movement: An Analysis of the GenVote Movement DNA</li> 
 							<li class=article-item data-title="A Brief History of Voting Rights & The Struggle for a Just Democracy for All" data-category="Welcome to the Movement" data-body="somebody">A Brief History of Voting Rights & The Struggle for a Just Democracy for All</li> 
 							<li class=article-item data-title="How to Build Public Testimony" data-category="Research and Strategy" data-body="somebody">How to Build Public Testimony</li> 
 							<li class=article-item data-title="Communications Strategy 101" data-category="Research and Strategy" data-body="somebody">Communications Strategy 101</li> 
 							<li class=article-item data-title="Lobbying Training" data-category="Research and Strategy" data-body="somebody">Lobbying Training</li> 
-							<li class=article-item data-title="Ballot Curing Process Training" data-category="Research and Strategy" data-body="somebody">Ballot Curing Process Training</li> 
+							<li class=article-item data-title="Ballot Curing Process Training" data-category="Research and Strategy" data-body="somebody">Ballot Curing Process Training</li>  -->
 						</ul>
 					</div>
 
@@ -222,19 +229,19 @@
 
 					<div class="row">
 						<div class="col-md-4 modal-body text-left" style="padding: 1em;">
-							<h2> RECORDING</h2>
-							<h4 id="modal-video">aaa</h4>
+							<h3> RECORDING</h3>
+							<a id="modal-video-link" href="#" target="_blank" rel="noopener noreferrer"> Watch the video </a>
 						</div>
 
 						<div class="col-md-4 modal-body" style="padding: 1em;">
-							<h2> CONTENT</h2>
-							<h4 id="modal-content">bbb</h4>
+							<h3> CONTENT</h3>
+							<a id="modal-slide-link" href="#" target="_blank" rel="noopener noreferrer"> Download the slide deck </a>
 						</div>
 
 						<div class="col-md-4 modal-body" style="padding: 1em;">
-							<h2> ACCOMPANYING RESOURCES </h2>
-							<h4 id="modal-resources">ccc</h4>
-						</div>
+							<h3> ACCOMPANYING RESOURCES </h3>
+							<a id="modal-resources-link" href="#" target="_blank" rel="noopener noreferrer"> Lorem Ipsum</a>
+						</div> 
 
 						
 					</div>
@@ -370,9 +377,15 @@
 
 				const title = item.getAttribute('data-title');
 				const body = item.getAttribute('data-body');
+				const videoLink = item.getAttribute('data-video-link');
+				const slideLink = item.getAttribute('data-slide-link');
+				const resourcesLink = item.getAttribute('data-resources-link');
 
 				document.getElementById('modal-title').textContent = title;
 				document.getElementById('modal-body').textContent = body;
+				document.getElementById('modal-video-link').href = videoLink;
+				document.getElementById('modal-slide-link').href = slideLink;
+				document.getElementById('modal-resources-link').href = resourcesLink;
 
 				$('#articleModal').modal('show');
 
