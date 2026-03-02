@@ -4242,6 +4242,10 @@ details p {
   margin-left: 0; 
 }
 
+.hidden { 
+  display: none; 
+}
+
 /* End styling for movement-training-resources
 =========================================================================================== */
 
