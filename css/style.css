@@ -4246,6 +4246,19 @@ details p {
   display: none; 
 }
 
+.article-item {
+    cursor: pointer;
+    padding: 8px 0;
+    color: #2F4F4F;
+    transition: color 0.2s ease;
+}
+
+.article-item:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+
 /* End styling for movement-training-resources
 =========================================================================================== */
 

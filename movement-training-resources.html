@@ -184,13 +184,13 @@
 
 					<div class="col-md-7 text-left">	
 						<ul id="articleList" class="no-bullets"> 
-							<li data-category="Welcome to the Movement">Building Your Nest: Team / Hub StarterPack</li> 
-							<li data-category="Welcome to the Movement">Living and Breathing the Movement: An Analysis of the GenVote Movement DNA</li> 
-							<li data-category="Welcome to the Movement">A Brief History of Voting Rights & The Struggle for a Just Democracy for All</li> 
-							<li data-category="Research and Strategy">How to Build Public Testimony</li> 
-							<li data-category="Research and Strategy">Communications Strategy 101</li> 
-							<li data-category="Research and Strategy">Lobbying Training</li> 
-							<li data-category="Research and Strategy">Ballot Curing Process Training</li> 
+							<li class=article-item data-title="Building Your Nest: Team / Hub StarterPack" data-category="Welcome to the Movement" data-body="somebody">Building Your Nest: Team / Hub StarterPack</li> 
+							<li class=article-item data-title="Living and Breathing the Movement: An Analysis of the GenVote Movement DNA" data-category="Welcome to the Movement" data-body="somebody">Living and Breathing the Movement: An Analysis of the GenVote Movement DNA</li> 
+							<li class=article-item data-title="A Brief History of Voting Rights & The Struggle for a Just Democracy for All" data-category="Welcome to the Movement" data-body="somebody">A Brief History of Voting Rights & The Struggle for a Just Democracy for All</li> 
+							<li class=article-item data-title="How to Build Public Testimony" data-category="Research and Strategy" data-body="somebody">How to Build Public Testimony</li> 
+							<li class=article-item data-title="Communications Strategy 101" data-category="Research and Strategy" data-body="somebody">Communications Strategy 101</li> 
+							<li class=article-item data-title="Lobbying Training" data-category="Research and Strategy" data-body="somebody">Lobbying Training</li> 
+							<li class=article-item data-title="Ballot Curing Process Training" data-category="Research and Strategy" data-body="somebody">Ballot Curing Process Training</li> 
 						</ul>
 					</div>
 
@@ -203,6 +203,26 @@
             </div>
         </div>
     </div>
+
+	<!--========modal window template=========-->
+	<div id="articleModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<div class="modal-body text-center" style="padding: 1em;">
+					<h1 id="modal-title"></h1>
+					<h4 id="modal-body"></h4>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--========modal window end =========-->
 </div>
 
 
@@ -283,6 +303,8 @@
 	<!-- Optional JavaScript -->
 
 	<script> 
+
+	//Filter logic start
 		const checkboxes = document.querySelectorAll('.category-filter'); 
 		const items = document.querySelectorAll('#articleList li'); 
 
@@ -308,6 +330,30 @@
 		checkboxes.forEach(cb => cb.addEventListener('change', applyFilters)); 
 
 		applyFilters();
+
+	//Filter logic end
+		
+
+	//Modal logic start
+		const articleItems = document.querySelectorAll('.article-item');
+
+		articleItems.forEach(function(item) {
+			item.addEventListener('click', function(){
+
+				const title = item.getAttribute('data-title');
+				const body = item.getAttribute('data-body');
+
+				document.getElementById('modal-title').textContent = title;
+				document.getElementById('modal-body').textContent = body;
+
+				$('#articleModal').modal('show');
+
+			});
+		});
+
+		
+	//Modal logic end
+
 	</script>
 
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
