@@ -285,7 +285,7 @@
 	<script> 
 		const searchInput = document.getElementById('search'); 
 		const checkboxes = document.querySelectorAll('.category-filter'); 
-		const items = document.querySelectorAll('#itemList li'); 
+		const items = document.querySelectorAll('#articleList li'); 
 		function applyFilters() { 
 			const text = searchInput.value.toLowerCase(); 
 			const activeCategories = Array.from(checkboxes) .filter(cb => cb.checked) .map(cb => cb.value); 
@@ -301,7 +301,7 @@
 			else { 
 				item.classList.add('hidden'); 
 			} 
-			
+
 			}); 
 
 		} 
