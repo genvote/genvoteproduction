@@ -183,7 +183,15 @@
 
 
 					<div class="col-md-7 text-left">	
-						<h3> article </h3>
+						<ul id="articleList" class="no-bullets"> 
+							<li data-category="Welcome to the Movement">Building Your Nest: Team / Hub StarterPack</li> 
+							<li data-category="Welcome to the Movement">Living and Breathing the Movement: An Analysis of the GenVote Movement DNA</li> 
+							<li data-category="Welcome to the Movement">A Brief History of Voting Rights & The Struggle for a Just Democracy for All</li> 
+							<li data-category="Research and Strategy">How to Build Public Testimony</li> 
+							<li data-category="Research and Strategy">Communications Strategy 101</li> 
+							<li data-category="Research and Strategy">Lobbying Training</li> 
+							<li data-category="Research and Strategy">Ballot Curing Process Training</li> 
+						</ul>
 					</div>
 
 
@@ -273,6 +281,38 @@
 
 
 	<!-- Optional JavaScript -->
+
+	<script> 
+		const searchInput = document.getElementById('search'); 
+		const checkboxes = document.querySelectorAll('.category-filter'); 
+		const items = document.querySelectorAll('#itemList li'); 
+		function applyFilters() { 
+			const text = searchInput.value.toLowerCase(); 
+			const activeCategories = Array.from(checkboxes) .filter(cb => cb.checked) .map(cb => cb.value); 
+			items.forEach(item => { const name = item.textContent.toLowerCase(); 
+			const category = item.getAttribute('data-category'); 
+			const matchesText = name.includes(text); 
+			const matchesCategory = activeCategories.includes(category);
+
+			if (matchesText && matchesCategory) { 
+				item.classList.remove('hidden'); 
+			} 
+			
+			else { 
+				item.classList.add('hidden'); 
+			} 
+			
+			}); 
+
+		} 
+	
+		searchInput.addEventListener('input', applyFilters); 
+		
+		checkboxes.forEach(cb => cb.addEventListener('change', applyFilters)); 
+		
+		// Initial filter applyFilters(); 
+		
+	</script>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.js"></script>

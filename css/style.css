@@ -4233,7 +4233,13 @@ details p {
 }
 
 .filter-column label {
-    display: block;
+  display: block;
+}
+
+.no-bullets { 
+  list-style: none; 
+  padding-left: 0; 
+  margin-left: 0; 
 }
 
 /* End styling for movement-training-resources
