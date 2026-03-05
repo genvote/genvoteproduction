@@ -4247,19 +4247,26 @@ details p {
 }
 
 .article-item {
-    cursor: pointer;
-    padding: 8px 0;
-    color: #2F4F4F;
-    transition: color 0.2s ease;
+  cursor: pointer;
+  padding: 8px 0;
+  color: #2F4F4F;
+  transition: color 0.2s ease;
 }
 
 .article-item:hover {
-    text-decoration: underline;
-    color: #000;
+  text-decoration: underline;
+  color: #000;
 }
 
 .modal-dialog.modal-custom { 
   max-width: 90%; 
+}
+
+.no-bullets-box {
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+  border: 1px solid #000;
 }
 
 
