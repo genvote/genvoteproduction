@@ -204,6 +204,7 @@
 								data-video-link=""
 								data-slide-link="https://www.canva.com/design/DAFvJEvQUv4/XK8uGXA8p7fpsy1Vp4o8xg/edit?utm_content=DAFvJEvQUv4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
 								data-resources-link=""
+								data-resources-title=""
 								data-image-link="img/training-resources/A-Brief-History.png"
 								>A Brief History of Voting Rights & The Struggle for a Just Democracy for All
 							</li> 
@@ -213,6 +214,7 @@
 								data-video-link=""
 								data-slide-link="https://www.canva.com/design/DAHA4KWK_pg/jRnkp81q5FWhwAgI9kpHZg/edit?utm_content=DAHA4KWK_pg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
 								data-resources-link=""
+								data-resources-title=""
 								data-image-link="img/training-resources/authoritarianism.png"
 								>The Role of Students in the Face of Authoritarianism
 							</li> 
@@ -224,6 +226,7 @@
 								data-video-link=""
 								data-slide-link="https://www.canva.com/design/DAHA4KWK_pg/jRnkp81q5FWhwAgI9kpHZg/edit?utm_content=DAHA4KWK_pg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
 								data-resources-link='["https://docs.google.com/document/d/1um9kDjI7IpBeI7XlKHfITkVWt2pMeXktxQtb3tPl7g0/edit?usp=sharing", "https://www.canva.com/design/DAHA4Kqvpf0/-mn7Uwvzy10CI-T8Wvq6yA/edit?utm_content=DAHA4Kqvpf0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"]'
+								data-resources-title='["Just Democracy for All Campaign Planning Guide", "SWOT Analysis Template"]'
 								data-image-link="img/training-resources/root-causes.png"
 								>Developing a JDA Campaign
 							</li> 
@@ -234,6 +237,7 @@
 								data-video-link=""
 								data-slide-link="https://www.canva.com/design/DAHA4KWK_pg/jRnkp81q5FWhwAgI9kpHZg/edit?utm_content=DAHA4KWK_pg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
 								data-resources-link=""
+								data-resources-title=""
 								data-image-link="img/training-resources/root-causes.png"
 								>Developing a JDA Campaign
 							</li> 
@@ -303,7 +307,7 @@
 
 						<div class="col-md-3 modal-body" style="padding: 1em;">
 							<h4> ACCOMPANYING RESOURCES </h4>
-							<a id="modal-resources-link" href="#" target="_blank" rel="noopener noreferrer"> Lorem Ipsum</a>
+							<div id="modal-resources-link" href="#" target="_blank" rel="noopener noreferrer"> Lorem Ipsum</div>
 						</div> 
 
 						<div class="col-md-3 modal-body" style="padding: 1em;"> 
@@ -453,8 +457,43 @@
 				document.getElementById('modal-body').textContent = body;
 				document.getElementById('modal-video-link').href = videoLink;
 				document.getElementById('modal-slide-link').href = slideLink;
-				document.getElementById('modal-resources-link').href = resourcesLink;
 				document.getElementById('modal-image').src = imageLink;
+
+				const resourcesRaw = item.getAttribute('data-resources-link');
+				const resourcesTitleRaw = item.getAttribute('data-resources-title');
+				let resources = [];
+				let resourcesTitle = [];
+
+				try {
+    				resources = JSON.parse(resourcesRaw); // multiple links
+				} 
+				
+				catch {
+    				resources = [resourcesRaw]; // single link fallback
+				}
+
+				try {
+					resourcesTitle = JSON.parse(resourcesTitleRaw);
+				}
+
+				catch {
+					resourcesTitle = [resourcesTitleRaw];
+				}
+
+
+
+				const resContainer = document.getElementById('modal-resources-link');
+				resContainer.innerHTML = "";
+
+				resources.forEach((url, i) => {
+					const a = document.createElement('a');
+					a.href = url;
+					a.textContent = `Resource ${resourcesTitle[i]}`;
+					a.target = "_blank";
+					resContainer.appendChild(a);
+					resContainer.appendChild(document.createElement('br'));
+				});
+
 
 				$('#articleModal').modal('show');
 
