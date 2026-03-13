@@ -209,7 +209,7 @@
 
 					<!-- TODO: add multiple categories for articles, fix template text for empty links, further modify style to match contract -->
 
-					<div class="col-md-6 text-left ml-5">	
+					<div class="col-md-7 text-left ml-5">	
 						<ul id="articleList" class="no-bullets"> 
 							<li class="article-item no-bullets-box my-5" data-title="A Brief History of Voting Rights & The Struggle for a Just Democracy for All (80-90 minutes)" data-category="Welcome to the Movement" 
 								data-body="The GenVote A Brief History of Voting Rights & The Struggle for a Just Democracy for All
@@ -512,10 +512,29 @@
 		applyFilters();
 
 	//Filter logic end
+
+	//article body preview logic start
+	const articleItems = document.querySelectorAll('.article-item');
+
+	articleItems.forEach(function(item) { 
+		const body = item.getAttribute('data-body').substring(0, 140);
+		const title = item.getAttribute('data-title');
+
+		item.innerHTML = `
+		<h4 class="article-title">${title}</h4>
+		<p class="article-body">${body}...</p>
+		`;
+	});
+
+
+
+	//article body preview logic end
+
+
 		
 
 	//Modal logic start
-		const articleItems = document.querySelectorAll('.article-item');
+
 
 		articleItems.forEach(function(item) {
 			item.addEventListener('click', function(){
@@ -532,6 +551,8 @@
 				document.getElementById('modal-video-link').href = videoLink;
 				document.getElementById('modal-slide-link').href = slideLink;
 				document.getElementById('modal-image').src = imageLink;
+
+				
 
 				const resourcesRaw = item.getAttribute('data-resources-link');
 				const resourcesTitleRaw = item.getAttribute('data-resources-title');
