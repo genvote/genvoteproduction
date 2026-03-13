@@ -517,8 +517,9 @@
 	const articleItems = document.querySelectorAll('.article-item');
 
 	articleItems.forEach(function(item) { 
+		const title = item.textContent;
 		const body = item.getAttribute('data-body').substring(0, 140);
-		const title = item.getAttribute('data-title');
+	
 
 		item.innerHTML = `
 		<h4 class="article-title">${title}</h4>
