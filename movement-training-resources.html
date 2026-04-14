@@ -376,19 +376,19 @@
 							</div>
 
 							<div class="col-md-3">
-								<div class="modal-body" style="padding: 1em 0.5em;">
+								<div id="modal-video-section" class="modal-body" style="padding: 1em 0.5em;">
 									<h4> RECORDING</h4>
 									<a id="modal-video-link" href="#" target="_blank" rel="noopener noreferrer"> Watch the video </a>
 								</div>
 
-								<div class="modal-body" style="padding: 1em 0.5em;">
+								<div id="modal-slide-section" class="modal-body" style="padding: 1em 0.5em;">
 									<h4> CONTENT</h4>
 									<a id="modal-slide-link" href="#" target="_blank" rel="noopener noreferrer"> Download the slide deck </a>
 								</div>
 
-								<div class="modal-body" style="padding: 1em 0.5em;">
+								<div id="modal-resources-section" class="modal-body" style="padding: 1em 0.5em;">
 									<h4> ACCOMPANYING RESOURCES </h4>
-									<div id="modal-resources-link" href="#" target="_blank" rel="noopener noreferrer"> Lorem Ipsum</div>
+									<div id="modal-resources-link"></div>
 								</div>
 							</div>
 
@@ -553,9 +553,23 @@
 
 				document.getElementById('modal-title').textContent = title.toUpperCase();
 				document.getElementById('modal-body').textContent = body;
-				document.getElementById('modal-video-link').href = videoLink;
-				document.getElementById('modal-slide-link').href = slideLink;
 				document.getElementById('modal-image').src = imageLink;
+
+				const videoSection = document.getElementById('modal-video-section');
+				if (videoLink) {
+					videoSection.style.display = '';
+					document.getElementById('modal-video-link').href = videoLink;
+				} else {
+					videoSection.style.display = 'none';
+				}
+
+				const slideSection = document.getElementById('modal-slide-section');
+				if (slideLink) {
+					slideSection.style.display = '';
+					document.getElementById('modal-slide-link').href = slideLink;
+				} else {
+					slideSection.style.display = 'none';
+				}
 
 				
 
@@ -583,16 +597,22 @@
 
 
 				const resContainer = document.getElementById('modal-resources-link');
+				const resourcesSection = document.getElementById('modal-resources-section');
 				resContainer.innerHTML = "";
 
-				resources.forEach((url, i) => {
-					const a = document.createElement('a');
-					a.href = url;
-					a.textContent = `Resource ${resourcesTitle[i]}`;
-					a.target = "_blank";
-					resContainer.appendChild(a);
-					resContainer.appendChild(document.createElement('br'));
-				});
+				if (resourcesRaw) {
+					resourcesSection.style.display = '';
+					resources.forEach((url, i) => {
+						const a = document.createElement('a');
+						a.href = url;
+						a.textContent = resourcesTitle[i] || `Resource ${i + 1}`;
+						a.target = "_blank";
+						resContainer.appendChild(a);
+						resContainer.appendChild(document.createElement('br'));
+					});
+				} else {
+					resourcesSection.style.display = 'none';
+				}
 
 
 				$('#articleModal').modal('show');
