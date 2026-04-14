@@ -4248,14 +4248,38 @@ details p {
 
 .article-item {
   cursor: pointer;
-  padding: 8px 0;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #FAFAFF;
+  border-left: 15px solid #2F4F4F;
+  padding: 15px;
   color: #2F4F4F;
-  transition: color 0.2s ease;
+  transition: box-shadow 0.2s ease, color 0.2s ease;
 }
 
 .article-item:hover {
-  text-decoration: underline;
   color: #000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Category color stripes */
+.article-item[data-category="Welcome to the Movement"]      { border-left-color: #f5ca3a; }
+.article-item[data-category="Movement Culture"]             { border-left-color: #ff6aff; }
+.article-item[data-category="Core Organizer Skills"]        { border-left-color: #ff5c5d; }
+.article-item[data-category="Core Team/Hub Functions"]      { border-left-color: #a3a0ff; }
+.article-item[data-category="Election Defense"]             { border-left-color: #4ade80; }
+.article-item[data-category="Direct Action"]                { border-left-color: #fb923c; }
+.article-item[data-category="Art and Culture"]              { border-left-color: #e879f9; }
+.article-item[data-category="Wellbeing and Sustainability"] { border-left-color: #34d399; }
+.article-item[data-category="Leadership Development"]       { border-left-color: #60a5fa; }
+.article-item[data-category="Democracy, Policy, and History"] { border-left-color: #818cf8; }
+.article-item[data-category="Research and Strategy"]        { border-left-color: #f87171; }
+
+.article-title {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  margin: 0;
 }
 
 .modal-dialog.modal-custom { 
@@ -4267,6 +4291,14 @@ details p {
   margin: 0;
   padding: 15px;
   border: 1px solid #000;
+}
+
+.article-item.no-bullets-box {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left-width: 15px;
+  border-left-style: solid;
 }
 
 
