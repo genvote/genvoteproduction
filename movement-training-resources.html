@@ -372,29 +372,33 @@
 
 					<div style="padding: 0 1em;">
 						<div class="row">
-							<div class="col-md-3 modal-body" style="padding: 1em 0.5em;">
-								<h4> RECORDING</h4>
-								<a id="modal-video-link" href="#" target="_blank" rel="noopener noreferrer"> Watch the video </a>
-							</div>
-
-							<div class="col-md-3 modal-body" style="padding: 1em 0.5em;">
-								<h4> CONTENT</h4>
-								<a id="modal-slide-link" href="#" target="_blank" rel="noopener noreferrer"> Download the slide deck </a>
-							</div>
-
-							<div class="col-md-3 modal-body" style="padding: 1em 0.5em;">
-								<h4> ACCOMPANYING RESOURCES </h4>
-								<div id="modal-resources-link" href="#" target="_blank" rel="noopener noreferrer"> Lorem Ipsum</div>
-							</div>
 
 							<div class="col-md-3 modal-body" style="padding: 1em 0.5em;">
 								<img id="modal-image" src="#" alt="Description" style="max-width: 100%; height: auto;">
 							</div>
+
+							<div class="col-md-3">
+								<div class="modal-body" style="padding: 1em 0.5em;">
+									<h4> RECORDING</h4>
+									<a id="modal-video-link" href="#" target="_blank" rel="noopener noreferrer"> Watch the video </a>
+								</div>
+
+								<div class="modal-body" style="padding: 1em 0.5em;">
+									<h4> CONTENT</h4>
+									<a id="modal-slide-link" href="#" target="_blank" rel="noopener noreferrer"> Download the slide deck </a>
+								</div>
+
+								<div class="modal-body" style="padding: 1em 0.5em;">
+									<h4> ACCOMPANYING RESOURCES </h4>
+									<div id="modal-resources-link" href="#" target="_blank" rel="noopener noreferrer"> Lorem Ipsum</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 modal-body" style="padding: 1em 0.5em;">
+								<p id="modal-body"></p>
+							</div>
+
 						</div>
-					</div>
-				
-					<div class="modal-body" style="padding: 1em;">
-						<h4 id="modal-body"></h4>
 					</div>
 
 				</div>
@@ -549,7 +553,7 @@
 				const resourcesLink = item.getAttribute('data-resources-link');
 				const imageLink = item.getAttribute('data-image-link');
 
-				document.getElementById('modal-title').textContent = title;
+				document.getElementById('modal-title').textContent = title.toUpperCase();
 				document.getElementById('modal-body').textContent = body;
 				document.getElementById('modal-video-link').href = videoLink;
 				document.getElementById('modal-slide-link').href = slideLink;
