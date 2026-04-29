@@ -4264,7 +4264,7 @@ details p {
 
 /* Category color stripes */
 .article-item[data-category="Welcome to the Movement"]      { border-left-color: #f5ca3a; }
-.article-item[data-category="Movement Culture"]             { border-left-color: #ff6aff; }
+.article-item[data-category="Movement Culture"]             { border-left-color: #232221; }
 .article-item[data-category="Core Organizer Skills"]        { border-left-color: #ff5c5d; }
 .article-item[data-category="Core Team/Hub Functions"]      { border-left-color: #a3a0ff; }
 .article-item[data-category="Election Defense"]             { border-left-color: #4ade80; }
