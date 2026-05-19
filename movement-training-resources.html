@@ -172,7 +172,7 @@
 					</div>
 				
 					<div class="col-md-6">
-						<img src="img/training-resources/training-meet.png">
+						<img src="img/training-resources/training-meet.png" class="img-fluid">
 					</div>
 
 				</div>
@@ -186,33 +186,46 @@
 						<div class="no-bullets-box" style="background-color: #FAFAFF">
 							<h3 class= "training-header no">Filter by:</h3>
 
-							<label> 
-								<input type="checkbox" class="category-filter" value="Welcome to the Movement"> Welcome to the Movement 
-							</label> 
-							<label> 
+							<label>
+								<input type="checkbox" class="category-filter" value="Welcome to the Movement"> Welcome to the Movement
+							</label>
+							<label>
 								<input type="checkbox" class="category-filter" value="Core Organizer Skills"> Core Organizer Skills
 							</label>
-							<label> 
+							<label>
 								<input type="checkbox" class="category-filter" value="Election Defense"> Election Defense
 							</label>
-							<label> 
+							<label>
 								<input type="checkbox" class="category-filter" value="Direct Action"> Direct Action
 							</label>
-							<label> 
+							<label>
 								<input type="checkbox" class="category-filter" value="Art and Culture"> Art and Culture
 							</label>
-							<label> 
+							<label>
 								<input type="checkbox" class="category-filter" value="Wellbeing and Sustainability"> Wellbeing and Sustainability
 							</label>
-							<label> 
+							<label>
 								<input type="checkbox" class="category-filter" value="Leadership Development"> Leadership Development
 							</label>
-							<label> 
+							<label>
 								<input type="checkbox" class="category-filter" value="Democracy, Policy, and History"> Democracy, Policy, and History
 							</label>
-							<label> 
-								<input type="checkbox" class="category-filter" value="Research and Strategy"> Research and Strategy 
+							<label>
+								<input type="checkbox" class="category-filter" value="Research and Strategy"> Research and Strategy
 							</label>
+
+							<select multiple class="category-filter-select" size="6" aria-label="Filter by category">
+								<option value="Welcome to the Movement">Welcome to the Movement</option>
+								<option value="Core Organizer Skills">Core Organizer Skills</option>
+								<option value="Election Defense">Election Defense</option>
+								<option value="Direct Action">Direct Action</option>
+								<option value="Art and Culture">Art and Culture</option>
+								<option value="Wellbeing and Sustainability">Wellbeing and Sustainability</option>
+								<option value="Leadership Development">Leadership Development</option>
+								<option value="Democracy, Policy, and History">Democracy, Policy, and History</option>
+								<option value="Research and Strategy">Research and Strategy</option>
+							</select>
+							<p class="category-filter-hint">Tap to select; hold <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> to pick multiple.</p>
 
 						</div>
 
@@ -498,29 +511,52 @@
 	<script> 
 
 	//Filter logic start
-		const checkboxes = document.querySelectorAll('.category-filter'); 
-		const items = document.querySelectorAll('#articleList li'); 
+		const checkboxes = document.querySelectorAll('.category-filter');
+		const filterSelect = document.querySelector('.category-filter-select');
+		const items = document.querySelectorAll('#articleList li');
 
-		function applyFilters() { 
+		function syncFromCheckboxes() {
+			if (!filterSelect) return;
+			const checked = new Set(Array.from(checkboxes).filter(cb => cb.checked).map(cb => cb.value));
+			Array.from(filterSelect.options).forEach(opt => { opt.selected = checked.has(opt.value); });
+		}
+
+		function syncFromSelect() {
+			if (!filterSelect) return;
+			const selected = new Set(Array.from(filterSelect.selectedOptions).map(opt => opt.value));
+			checkboxes.forEach(cb => { cb.checked = selected.has(cb.value); });
+		}
+
+		function applyFilters() {
 			const activeCategories = Array.from(checkboxes)
 				.filter(cb => cb.checked)
-				.map(cb => cb.value); 
+				.map(cb => cb.value);
 
-			items.forEach(item => { 
-				const category = item.getAttribute('data-category'); 
+			items.forEach(item => {
+				const category = item.getAttribute('data-category');
 
 				const matchesCategory =
 					activeCategories.length === 0 || activeCategories.includes(category);
 
-				if (matchesCategory) { 
-					item.classList.remove('hidden'); 
-				} else { 
-					item.classList.add('hidden'); 
-				} 
-			}); 
-		} 
+				if (matchesCategory) {
+					item.classList.remove('hidden');
+				} else {
+					item.classList.add('hidden');
+				}
+			});
+		}
 
-		checkboxes.forEach(cb => cb.addEventListener('change', applyFilters)); 
+		checkboxes.forEach(cb => cb.addEventListener('change', () => {
+			syncFromCheckboxes();
+			applyFilters();
+		}));
+
+		if (filterSelect) {
+			filterSelect.addEventListener('change', () => {
+				syncFromSelect();
+				applyFilters();
+			});
+		}
 
 		applyFilters();
 

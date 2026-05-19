@@ -4236,6 +4236,46 @@ details p {
   display: block;
 }
 
+.category-filter-select,
+.category-filter-hint {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .filter-column {
+    margin-right: 0 !important;
+    margin-bottom: 2rem;
+  }
+
+  .filter-column label {
+    display: none;
+  }
+
+  .category-filter-select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 0.5rem;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: #FAFAFF;
+    font-size: 16px;
+    font-family: inherit;
+    color: #2F4F4F;
+  }
+
+  .category-filter-select option {
+    padding: 6px 4px;
+  }
+
+  .category-filter-hint {
+    display: block;
+    margin: 0.5rem 0 0;
+    font-size: 12px;
+    color: #666;
+  }
+}
+
 .no-bullets { 
   list-style: none; 
   padding-left: 0; 
