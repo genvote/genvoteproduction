@@ -1094,6 +1094,12 @@ body{margin-top:20px;}
     position: relative;
     overflow: hidden;
 }
+
+.course_img_fill {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .single_course .course_head img {
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
