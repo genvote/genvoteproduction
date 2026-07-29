@@ -736,7 +736,7 @@ a {
 
 .pbox {
   border: 7px solid #8F8BFE;
-  color: #F9F;
+  color: black;
 }
 
 .why-matters {
@@ -1020,7 +1020,7 @@ background: url(../img/genvote-shirt.jpg) no-repeat center bottom;}
 body{margin-top:20px;}
 .popular_courses {
     padding-bottom: 100px;
-    background-color: #E81CFF;
+    background-color: #d53500;
 }
 @media (max-width: 991px) {
     .popular_courses {
@@ -1194,6 +1194,55 @@ body{margin-top:20px;}
 }
 .single_course:hover h4 a {
     color: #fdc632;
+}
+
+/* Support the Tour: image matches text block height (page4) */
+.support_img_col {
+    position: relative;
+}
+.support_img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+@media (max-width: 767px) {
+    .support_img {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Tour partners: stacked images (page3) */
+.tour_partners {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.tour_partners img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 30px;
+}
+.tour_partners .main_btn {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+/* Tour stops: full-width stacked cards (page2) */
+.tour_stops_list .tour_stop_card {
+    background: #f9f9ff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 20px rgba(0, 35, 71, 0.08);
+    margin-bottom: 30px;
 }
 
 
@@ -3467,6 +3516,32 @@ h6 {
     background: transparent;
     color: #E30809; }
 
+.tour_arrow_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 26px;
+  margin-top: 20px;
+  border: 2px solid #FFD200;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 300ms linear 0s; }
+  .tour_arrow_btn__text {
+    font: 700 15px/1 "CreatoDisplay-ExtraBold", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff; }
+  .tour_arrow_btn__arrow {
+    width: 40px;
+    height: 24px;
+    flex: none; }
+  .tour_arrow_btn:hover {
+    background: #FFD200; }
+    .tour_arrow_btn:hover .tour_arrow_btn__text {
+      color: #014e67; }
+    .tour_arrow_btn:hover .tour_arrow_btn__arrow path {
+      stroke: #014e67; }
+
 
 .main_btn2 {
   display: inline-block;
@@ -4742,7 +4817,40 @@ body{
 
 
 
-                                
+
 /*---------------------------------------------------- */
+
+/* Tour landing hero */
+.landing_hero {
+  padding: 200px 0 40px;
+}
+.landing_hero_inner {
+  text-align: center;
+}
+.landing_title {
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.landing_image {
+  display: block;
+  width: 100%;
+  height: 33.33vh;
+  object-fit: cover;
+}
+.landing_rule {
+  border: 0;
+  border-top: 2px solid #222;
+  width: 100%;
+  margin: 20px 0;
+}
+.landing_subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.landing_btn {
+  display: inline-block;
+}
 
 /*# sourceMappingURL=style.css.map */
