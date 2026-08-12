@@ -1196,7 +1196,7 @@ body{margin-top:20px;}
     color: #fdc632;
 }
 
-/* Support the Tour: image matches text block height (page4) */
+/* Support the Tour: image matches text block height (support-the-tour) */
 .support_img_col {
     position: relative;
 }
@@ -1218,7 +1218,7 @@ body{margin-top:20px;}
     }
 }
 
-/* Tour partners: stacked images (page3) */
+/* Tour partners: stacked images (partners) */
 .tour_partners {
     padding-top: 120px;
     padding-bottom: 40px;
@@ -1236,7 +1236,7 @@ body{margin-top:20px;}
     display: inline-block;
 }
 
-/* Tour stops: full-width stacked cards (page2) */
+/* Tour stops: full-width stacked cards (rsvp) */
 .tour_stops_list .tour_stop_card {
     background: #f9f9ff;
     border-radius: 10px;
