@@ -104,6 +104,32 @@
   }
   active_course();
 
+    function events_carousel() {
+        if ($(".events_carousel").length) {
+            $(".events_carousel").owlCarousel({
+                items: 3,
+                loop: false,
+                margin: 30,
+                autoplay: false,
+                nav: true,
+                dots: false,
+                navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    }
+                }
+            });
+        }
+    }
+    events_carousel();
+
 
  
     /*-------------------
