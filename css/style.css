@@ -1100,6 +1100,11 @@ body{margin-top:20px;}
   height: auto;
   display: block;
 }
+/* Keep homepage event photos aligned while preserving their proportions. */
+.events_carousel .course_head .course_img_fill {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
 .single_course .course_head img {
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
