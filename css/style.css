@@ -1101,9 +1101,40 @@ body{margin-top:20px;}
   display: block;
 }
 /* Keep homepage event photos aligned while preserving their proportions. */
-.events_carousel .course_head .course_img_fill {
+.events_carousel .course_head .course_img_fill,
+.homepage-events .course_head .course_img_fill {
   aspect-ratio: 3 / 2;
   object-fit: cover;
+}
+.homepage-events {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.homepage-events .single_course {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.homepage-events .course_head a {
+  display: block;
+}
+.homepage-events .course_content {
+  flex: 1;
+}
+.homepage-events .course_content h4 {
+  min-height: 2.4em;
+}
+.homepage-events .tag {
+  white-space: normal;
+}
+@media (max-width: 767px) {
+  .homepage-events {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 400px;
+  }
 }
 .single_course .course_head img {
     -webkit-transition: all 0.3s ease 0s;
